@@ -33,18 +33,22 @@ public class LoopFun
         String[] myName = x.split("");
         for(int i = 0; i < myName.length; i++) {
             if(myName[i] == "") {
-                String s = myName[i];
+                 String s = myName[i];
                 
             }              
         }  
           
           
-          return x;
+          return x.toString().toUpperCase();
       }
 
       /**
-       * To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
-       * intended audience. This method encrypt the message by shifting the letter by 3 characters. If the character is
+       * To prevent anyone from reading our messages, we can encrypt it so it will only be 
+       * readable by its
+       * intended audience. 
+       * This method encrypt the message by shifting the letter by 3 
+       * characters. 
+       * If the character is
        * at the end of the alphabet, it will wraps around.
        * For example:
        *  'a' => 'd'
